@@ -2,6 +2,7 @@
 
 function getComputerChoice () {
   let computerSelection = Math.floor(Math.random() * 3 + 1)
+  // Here we generate a random number from 1 to 3, then:
   if (computerSelection === 1) {
     computerSelection = 'Rock'
   } else if (computerSelection === 2) {
@@ -12,7 +13,7 @@ function getComputerChoice () {
   return computerSelection
 }
 
-function playRound (playerSelection) {
+function playRound (playerSelection) { // This function does two things: 1. The logic 2. Display winner/loser/tie through console.log 
   let computer = getComputerChoice();
   if (playerSelection === computer) {
     console.log('No one wins')
