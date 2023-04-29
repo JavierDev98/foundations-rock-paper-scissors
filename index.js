@@ -9,7 +9,6 @@ function getComputerChoice () {
   } else if (computerSelection === 3) {
     computerSelection = 'Scissors'
   }
-  console.log(computerSelection)
   return computerSelection
 }
 
@@ -32,4 +31,10 @@ function playRound (playerSelection) {
   }
 }
 
-playRound ("Paper");
+function game() {
+    for(let i=1; i <= 5; i++) {
+      playRound("Paper");
+    }
+}
+
+game();
