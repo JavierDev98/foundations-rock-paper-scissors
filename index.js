@@ -15,51 +15,69 @@ function getComputerChoice () {
 
 function playRound (playerSelection) { // This function does two things: 1. The logic 2. Display winner/loser/tie through console.log 
   let computer = getComputerChoice();
-  getImages(playerSelection,computer);
+   let announcement = document.querySelector('.title');
+   
   if (playerSelection === computer) {
-    console.log('No one wins');
+    announcement.textContent = 'No one wins';
+    getTie(playerSelection,computer);
   } else if (playerSelection === 'Rock' && computer === 'Paper') {
-    console.log('Paper beats Rock. Computer wins!');
+    announcement.textContent = "'Paper beats Rock. Computer wins!'";
+    let playerImage = document.querySelector(".playerImg");
+  playerImage.setAttribute('src','./images/rock.png');
+  let computerImage = document.querySelector(".computerImg");
+  computerImage.setAttribute('src','./images/paper.png');
   } else if (playerSelection === 'Paper' && computer === 'Rock') {
-    console.log('Paper beats Rock. Player wins!');
+    announcement.textContent = 'Paper beats Rock. Player wins!';
+    let playerImage = document.querySelector(".playerImg");
+    playerImage.setAttribute('src','./images/paper.png'); 
+    let computerImage = document.querySelector(".computerImg");
+    computerImage.setAttribute('src','./images/rock.png');
   } else if (playerSelection === 'Paper' && computer === 'Scissors') {
-    console.log('Scissors beats Paper. Computer wins!');
+    announcement.textContent = 'Scissors beats Paper. Computer wins!';
+    let playerImage = document.querySelector(".playerImg");
+    playerImage.setAttribute('src','./images/paper.png');
+    let computerImage = document.querySelector(".computerImg");
+    computerImage.setAttribute('src','./images/scissors.png');
   } else if (playerSelection === 'Scissors' && computer === 'Paper') {
-    console.log('Paper beats Scissors. Player wins!');
+    announcement.textContent = 'Paper beats Scissors. Player wins!';
+    let playerImage = document.querySelector(".playerImg");
+    playerImage.setAttribute('src','./images/scissors.png');
+    let computerImage = document.querySelector(".computerImg");
+    computerImage.setAttribute('src','./images/paper.png');
   } else if (playerSelection === 'Scissors' && computer === 'Rock') {
-    console.log('Rock beats Scissors. Computer wins!');
+    announcement.textContent = 'Rock beats Scissors. Computer wins!';
+    let playerImage = document.querySelector(".playerImg");
+    playerImage.setAttribute('src','./images/scissors.png');
+    let computerImage = document.querySelector(".computerImg");
+    computerImage.setAttribute('src','./images/rock.png');
   } else if (playerSelection === 'Rock' && computer === 'Scissors') {
-    console.log('Rock beats Scissors. Player wins!');
+    announcement.textContent = 'Rock beats Scissors. Player wins!';
+    let playerImage = document.querySelector(".playerImg");
+    playerImage.setAttribute('src','./images/rock.png');
+    let computerImage = document.querySelector(".computerImg");
+    computerImage.setAttribute('src','./images/scissors.png');
   }
 }
 
-function getImages(playerSelection,computerSelection) {
-//Player 
-if(playerSelection = 'Rock') {
-  let playerImage = document.querySelector(".playerImg");
-  playerImage.setAttribute('src','./images/rock.png');
-}
-else if(playerSelection = 'Paper') {
+function getTie(playerSelection,computerSelection) {
+  if(playerSelection === 'Rock' && computerSelection === 'Rock'){
+    let playerImage = document.querySelector(".playerImg");
+    playerImage.setAttribute('src','./images/rock.png');
+    let computerImage = document.querySelector(".computerImg");
+    computerImage.setAttribute('src','./images/rock.png');
+  }
+ else if(playerSelection === 'Paper' && computerSelection === 'Paper'){
   let playerImage = document.querySelector(".playerImg");
   playerImage.setAttribute('src','./images/paper.png');
-}
-if(playerSelection = 'Scissors') {
+  let computerImage = document.querySelector(".computerImg");
+  computerImage.setAttribute('src','./images/paper.png'); 
+  }
+ else  if(playerSelection === 'Scissors' && computerSelection === 'Scissors'){
   let playerImage = document.querySelector(".playerImg");
   playerImage.setAttribute('src','./images/scissors.png');
+  let computerImage = document.querySelector(".computerImg");
+  computerImage.setAttribute('src','./images/scissors.png');
+  }
 }
 
-//Computer
-if(computerSelection = 'Rock') {
-  let computerImage = document.querySelector(".computerImg");
-  computerImage.setAttribute('src','./images/rock.png');
-}
-else if(computerSelection = 'Paper') {
-  let computerImage = document.querySelector(".computerImg");
-  computerImage.setAttribute('src','./images/paper.png');
-}
-if(playerSelection = 'Scissors') {
-  let computerImage = document.querySelector(".ComputerImg");
-  computerImage.setAttribute('src','./images/scissors.png');
-}
-}
 
