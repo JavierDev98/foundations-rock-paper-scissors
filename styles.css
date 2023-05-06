@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4B0022;
+}
+
+.container {
+    display: flex;
+    border: 5px solid #D8004A;
+    background-color: #8B0033;
+    flex-basis: 80rem;
+    width: 100rem;
+}
+
+.container > .playerScreen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-right: 5px solid #FF0000;
+}
+
+.container > .computerScreen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
