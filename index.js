@@ -62,7 +62,7 @@ function playRound(playerSelection) {
     playerImage.setAttribute('src', './images/scissors.png');
     let computerImage = document.querySelector('.computerImg');
     computerImage.setAttribute('src', './images/rock.png');
-    computerScore +1;
+    computerScore += 1;
     computerScoreText.innerText = `Score: ${computerScore}`;
   } else if (playerSelection === 'Rock' && computer === 'Scissors') {
     announcement.textContent = 'Rock beats Scissors. Player wins!'
@@ -110,11 +110,6 @@ function callWinner() {
     playerScoreText.innerText = ``;
   }
 }
-
-
-  
-  
-
 
 
 let rockButton = document.querySelector("body > div.bottomContainer > div.buttons > button.rock");
