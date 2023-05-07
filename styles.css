@@ -1,27 +1,91 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #4B0022;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2A5D2;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Sigmar', cursive;
+  font-size: 5rem;
+}
+
+.title {
+  margin: 0;
+  flex: 0.2;
+}
+
+.buttons {
+  flex: 1;
 }
 
 .container {
-    display: flex;
-    border: 5px solid #D8004A;
-    background-color: #8B0033;
-    flex-basis: 80rem;
-    width: 100rem;
+  flex: 0.8 3 auto;
+  display: flex;
+  border: 5px solid #F2DAE8;
+  background-color: #F2BAD8;
+  width: 80%;
+
 }
 
 .container > .playerScreen {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    border-right: 5px solid #FF0000;
+  flex: 1 3 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  border-right: 5px solid #F2DAE8;
 }
 
 .container > .computerScreen {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  flex: 1 3 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.playerImg,
+.computerImg {
+  flex: 0.8 3;
+  max-height: 20rem;
+ 
+}
+body > div.container > div.playerScreen > h1 {
+  margin: 0;
+}
+body > div.container > div.computerScreen > h1 {
+  margin: 0;  
+}
+
+.buttons {
+  display: flex;
+  gap:2rem;
+  flex-wrap: wrap;
+}
+
+.rock, .paper, .scissors {
+  border: none;
+  border-radius: 5%;
+  background-color: #A7C1EB;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+
+.rock:hover, .paper:hover, .scissors:hover {
+  box-shadow: 5px 5px 5px #3c3f3d;
+}
+
+.bottomContainer{
+  flex: 1;
+ display: flex;
+ align-items: baseline;
+ gap: 9rem;
+}
+
+.playerScoreText, .computerScoreText {
+  font-family: 'Sigmar', cursive;
+  font-size: 3rem;
+}
+
