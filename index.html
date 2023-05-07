@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-</head>
-<body>
-    <h1>Rock Paper Scissors</h1>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Rock Paper Scissors</h1>
+    <div class="container">
+      <div class="playerScreen">
+        <h1>Player</h1>
+        <img class="playerImg" />
+      </div>
+      <div class="computerScreen">
+        <h1>Computer</h1>
+        <img class="computerImg" />
+      </div>
+    </div>
+    <div class="bottomContainer">
+      <div class="playerScoreText"> </div>
+      <div class="buttons">
+        <button class="rock">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissors">Scissors</button>
+      </div>
+    <div class="computerScoreText"></div>
+    </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
