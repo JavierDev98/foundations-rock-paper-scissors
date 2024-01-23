@@ -2,8 +2,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F2A5D2;
+  background-color: #111827;
   margin: 0;
+  color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -11,9 +12,14 @@ h1 {
   font-size: 5rem;
 }
 
+.header {
+  grid-template-columns: 1fr;
+  background-color: #111720;
+}
+
 .title {
-  margin: 0;
-  flex: 0.2;
+  margin: 0;  
+  align-self: center;
 }
 
 .buttons {
@@ -24,7 +30,7 @@ h1 {
   flex: 0.8 3 auto;
   display: flex;
   border: 5px solid #F2DAE8;
-  background-color: #F2BAD8;
+  background-color: rgb(17 24 39);
   width: 80%;
 
 }

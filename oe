@@ -1,0 +1,71 @@
+[33mcommit 22ba98af548d35e7c278aacc88691b7fac89c2d6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/rps-ui[m[33m, [m[1;32mrps-ui[m[33m)[m
+Author: JavierDev98 <javiersniper1@gmail.com>
+Date:   Sun May 7 02:59:48 2023 -0600
+
+    added images
+
+[33mcommit 7ebb09717da8f72e33eabdfb4088083d780b01e9[m
+Author: JavierDev98 <javiersniper1@gmail.com>
+Date:   Sun May 7 02:49:38 2023 -0600
+
+    for some reason HTML was not being push, so it was fixed
+
+[33mcommit cd7e7dad5055167a13d93f488a31bb7df1b45d28[m
+Author: JavierDev98 <javiersniper1@gmail.com>
+Date:   Sun May 7 02:32:08 2023 -0600
+
+    fixed small bug in games logic
+
+[33mcommit 11204a7708bf3a9cf1390847d87650f2cd800262[m
+Author: JavierDev98 <javiersniper1@gmail.com>
+Date:   Sun May 7 02:28:26 2023 -0600
+
+    Added score functionality
+
+[33mcommit 076ffd3ecccbf68fb81711fd99fc4c233d36d501[m
+Author: JavierDev98 <javiersniper1@gmail.com>
+Date:   Sat May 6 02:01:55 2023 -0600
+
+    Added buttons that add player choice functionality
+
+[33mcommit 61e7582950bf4ce7dc6b778a6e2e33e8337c84a7[m
+Author: JavierDev98 <javiersniper1@gmail.com>
+Date:   Sat May 6 01:26:43 2023 -0600
+
+    deleted previously created function and rearranged code. Created getTie() function
+
+[33mcommit 3581ad33626f647648883be10462fba06199b77a[m
+Author: JavierDev98 <javiersniper1@gmail.com>
+Date:   Sat May 6 00:43:59 2023 -0600
+
+    added new function that sets images according to choices made
+
+[33mcommit 3300377a88bcbaaf1d75d20f348eee5a0c3b78ce[m
+Author: JavierDev98 <javiersniper1@gmail.com>
+Date:   Fri May 5 23:47:56 2023 -0600
+
+    initial CSS styling added
+
+[33mcommit c7e5cbfc2ff442fea1ab6758d2d69993a12555aa[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: JavierDev98 <javiersniper1@gmail.com>
+Date:   Sat Apr 29 17:06:34 2023 -0600
+
+    Added comments for better readability
+
+[33mcommit 0fc349c726ffd90dec4e82e6c85944f7589061f3[m
+Author: JavierDev98 <javiersniper1@gmail.com>
+Date:   Sat Apr 29 16:17:19 2023 -0600
+
+    added loop that runs 5 times for the sake of testing
+
+[33mcommit a82013dbad0997b718869ce2198723c94f40da2a[m
+Author: JavierDev98 <javiersniper1@gmail.com>
+Date:   Sat Apr 29 16:09:27 2023 -0600
+
+    Game's logic has been implemented
+
+[33mcommit 9570636a9ef4c031034af774a102e8b72f078f35[m
+Author: JavierDev98 <120436642+JavierDev98@users.noreply.github.com>
+Date:   Sat Apr 29 14:35:30 2023 -0600
+
+    Initial commit
